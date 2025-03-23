@@ -15,7 +15,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * @Create 2025/3/22 22:10
  * @Version 1.0
  */
-@EnableFeignClients(basePackages = "com.hmall.api.client")
+@EnableFeignClients(basePackages = "com.hmall.api.client",defaultConfiguration = DefaultFeignConfig.class)
 @MapperScan("com.hmall.pay.mapper")
 @SpringBootApplication
 public class PayApplication {
