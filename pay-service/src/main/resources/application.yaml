@@ -5,7 +5,14 @@ feign:
     enabled: true
 hm:
   db:
-    database: hm-cart
+    database: hm-pay
   swagger:
     title: "黑马商城支付接口文档"
     package: com.hmall.pay.controller
+spring:
+  rabbitmq:
+    host: 192.168.1.30
+    port: 5672
+    virtual-host: /hmall
+    username: hmall
+    password: 123
